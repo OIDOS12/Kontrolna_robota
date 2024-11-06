@@ -10,7 +10,7 @@ public class TimeStampOnAMessage implements Message {
     @Override
     public String getContent() {
         String originalContent = message.getContent();
-        // Дата й час фіксовані, щоб не виводити реальний
+        // Дата й час фіксовані, просто через заглушку
         String timestamp = "2024-11-06 00:00:07";
         return "(Timestamp: " + timestamp + ") " + originalContent;
     }
